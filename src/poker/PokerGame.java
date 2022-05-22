@@ -1,9 +1,9 @@
 package poker;
 
-import basic.Card;
-import basic.Deck;
-import basic.Game;
-import basic.Player;
+import base.Card;
+import base.Deck;
+import base.Game;
+import base.Player;
 
 import java.util.*;
 
@@ -66,7 +66,7 @@ public class PokerGame extends Game {
     }
 
     @Override
-    protected boolean gameOver() {
+    protected boolean isGameOver() {
         return currentRound == ROUNDS;
     }
 

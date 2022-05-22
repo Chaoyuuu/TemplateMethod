@@ -1,6 +1,6 @@
 package uno;
 
-import basic.Card;
+import base.Card;
 
 public class UNOCard extends Card {
     private final Color color;

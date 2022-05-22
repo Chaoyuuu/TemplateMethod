@@ -1,6 +1,6 @@
 package poker;
 
-import basic.Card;
+import base.Card;
 
 public class PokerCard extends Card {
     private final Rank rank;

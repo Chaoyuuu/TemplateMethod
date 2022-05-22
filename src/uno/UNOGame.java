@@ -1,8 +1,8 @@
 package uno;
 
-import basic.Deck;
-import basic.Game;
-import basic.Player;
+import base.Deck;
+import base.Game;
+import base.Player;
 
 import java.util.List;
 
@@ -61,7 +61,7 @@ public class UNOGame extends Game {
     }
 
     @Override
-    protected boolean gameOver() {
+    protected boolean isGameOver() {
         return players.get(currentPlayer).getNumberOfHands() == 0;
     }
 

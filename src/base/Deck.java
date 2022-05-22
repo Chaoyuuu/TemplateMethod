@@ -1,4 +1,4 @@
-package basic;
+package base;
 
 import poker.PokerCard;
 import poker.Rank;

@@ -1,14 +1,13 @@
-import basic.AIPlayer;
-import basic.Deck;
-import basic.Game;
-import basic.Player;
+import base.AIPlayer;
+import base.Deck;
+import base.Game;
+import base.Player;
 import poker.PokerGame;
-import uno.UNOGame;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static basic.Game.NUMBER_OF_PLAYERS;
+import static base.Game.NUMBER_OF_PLAYERS;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package basic;
+package base;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public abstract class Game {
         prepare();
         drawCards();
         beforeTheGameStart();
-        while (!gameOver()) {
+        while (!isGameOver()) {
             round();
         }
     }
@@ -34,6 +34,6 @@ public abstract class Game {
     protected void beforeTheGameStart() {};
     protected abstract void drawCards();
     protected abstract void round();
-    protected abstract boolean gameOver();
+    protected abstract boolean isGameOver();
     protected abstract Player getWinner();
 }
