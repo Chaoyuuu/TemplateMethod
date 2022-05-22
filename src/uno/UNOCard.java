@@ -1,7 +1,6 @@
 package uno;
 
 import basic.Card;
-import uno.Color;
 
 public class UNOCard extends Card {
     private final Color color;
@@ -10,6 +9,27 @@ public class UNOCard extends Card {
     public UNOCard(Color color, uno.Number number) {
         this.color = color;
         this.number = number;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public Number getNumber() {
+        return number;
+    }
+
+    public static boolean sameColor(UNOCard cardA, UNOCard cardB) {
+        return cardA.getColor().equals(cardB.getColor());
+    }
+
+    public static boolean sameNumber(UNOCard cardA, UNOCard cardB) {
+        return cardA.getNumber().equals(cardB.getNumber());
+    }
+
+    @Override
+    public String toString() {
+        return color.toString() + number.toString();
     }
 
     @Override

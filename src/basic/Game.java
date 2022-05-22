@@ -15,6 +15,7 @@ public abstract class Game {
     public void play() {
         prepare();
         drawCards();
+        beforeTheGameStart();
         while (!gameOver()) {
             round();
         }
@@ -30,6 +31,7 @@ public abstract class Game {
         deck.shuffle();
     }
 
+    protected void beforeTheGameStart() {};
     protected abstract void drawCards();
     protected abstract void round();
     protected abstract boolean gameOver();

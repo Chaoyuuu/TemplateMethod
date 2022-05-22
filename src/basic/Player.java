@@ -14,6 +14,14 @@ public abstract class Player {
         hands.add(card);
     }
 
+    public int getNumberOfHands() {
+        return hands.size();
+    }
+
+    public List<Card> getHands() {
+        return hands;
+    }
+
     public String getName() {
         return name;
     }
